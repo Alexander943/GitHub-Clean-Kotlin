@@ -16,5 +16,4 @@ abstract class BaseActivity : DaggerAppCompatActivity() {
         onBackPressed()
         return true
     }
-
 }

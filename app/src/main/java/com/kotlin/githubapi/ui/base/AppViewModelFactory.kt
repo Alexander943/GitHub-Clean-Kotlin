@@ -22,5 +22,4 @@ class AppViewModelFactory @Inject constructor(
             throw RuntimeException(e)
         }
     }
-
 }

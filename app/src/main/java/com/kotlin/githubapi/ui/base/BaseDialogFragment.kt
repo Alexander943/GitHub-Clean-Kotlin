@@ -14,5 +14,4 @@ abstract class BaseDialogFragment : DialogFragment() {
                               savedInstanceState: Bundle?): View? {
         return inflater.inflate(getFragmentLayout(), container, false)
     }
-
 }

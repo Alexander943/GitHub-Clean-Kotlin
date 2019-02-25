@@ -1,13 +1,10 @@
 package com.kotlin.githubapi.ui.splash
 
-import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import com.kotlin.githubapi.R
+import com.kotlin.githubapi.ui.base.BaseActivity
 
-class SplashActivity : AppCompatActivity() {
+class SplashActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-    }
+    override fun getLayoutResource(): Int = R.layout.activity_main
+
 }

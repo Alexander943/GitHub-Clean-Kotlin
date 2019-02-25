@@ -105,5 +105,4 @@ abstract class BaseListAdapter<T, VH : RecyclerView.ViewHolder> : RecyclerView.A
         this.items?.clear()
         notifyDataSetChanged()
     }
-
 }

@@ -13,5 +13,4 @@ abstract class BaseFragment : DaggerFragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? =
             inflater.inflate(getFragmentLayout(), container, false)
-
 }
