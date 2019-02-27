@@ -1,16 +1,11 @@
-package com.strikepros.alphaone.di.module
+package com.kotlin.githubapi.di.module
 
-import com.strikepros.alphaone.di.annotation.realm.RealmEncrypted
-import com.strikepros.alphaone.di.annotation.realm.RealmGlobal
-import com.strikepros.alphaone.di.annotation.realm.RealmInMemory
+import com.kotlin.githubapi.di.annotation.realm.RealmEncrypted
+import com.kotlin.githubapi.di.annotation.realm.RealmGlobal
+import com.kotlin.githubapi.di.annotation.realm.RealmInMemory
 import dagger.Module
 import dagger.Provides
-import io.realm.RealmConfiguration
 import javax.inject.Singleton
-
-/**
- * Created on 14.03.2018.
- */
 
 @Module
 class RealmModule {

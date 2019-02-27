@@ -1,11 +1,8 @@
-package com.strikepros.alphaone.di
+package com.kotlin.githubapi.di
 
 import android.app.Application
 import com.kotlin.githubapi.app.App
-import com.kotlin.githubapi.di.module.ActivityModule
-import com.kotlin.githubapi.di.module.DataSourceModule
-import com.strikepros.alphaone.App
-import com.strikepros.alphaone.di.module.*
+import com.kotlin.githubapi.di.module.*
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
@@ -34,9 +31,7 @@ import javax.inject.Singleton
     NetworkApiModule::class,
     RetrofitModule::class,
     RealmModule::class,
-    LocationModule::class,
-    DataSourceModule::class,
-    DeviceBleModule::class
+    DataSourceModule::class
 ])
 interface AppComponent : AndroidInjector<App> {
 
@@ -44,9 +39,8 @@ interface AppComponent : AndroidInjector<App> {
     interface Builder {
 
         @BindsInstance
-        fun application(application: Application): AppComponent.Builder
+        fun application(application: Application): Builder
 
         fun build(): AppComponent
     }
-
 }

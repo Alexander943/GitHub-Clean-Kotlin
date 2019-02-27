@@ -13,5 +13,4 @@ abstract class ActivityModule {
 
     @ContributesAndroidInjector
     internal abstract fun mainActivity(): MainActivity
-
 }

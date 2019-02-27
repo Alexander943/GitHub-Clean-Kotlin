@@ -1,10 +1,6 @@
-package com.strikepros.alphaone.di.annotation.realm
+package com.kotlin.githubapi.di.annotation.realm
 
 import javax.inject.Qualifier
-
-/**
- * Created on 14.03.2018.
- */
 
 @Qualifier
 @MustBeDocumented

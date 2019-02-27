@@ -1,19 +1,14 @@
-package com.strikepros.alphaone.di.module
+package com.kotlin.githubapi.di.module
 
-import com.grapesnberries.curllogger.CurlLoggerInterceptor
-import com.strikepros.alphaone.BuildConfig
-import com.strikepros.alphaone.di.annotation.httpclient.ClientDefault
-import com.strikepros.alphaone.di.annotation.httpclient.ClientLogging
+import com.kotlin.githubapi.BuildConfig
+import com.kotlin.githubapi.di.annotation.httpclient.ClientDefault
+import com.kotlin.githubapi.di.annotation.httpclient.ClientLogging
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
-
-/**
- * Created on 12.03.2018.
- */
 
 @Module
 class NetworkClientModule {

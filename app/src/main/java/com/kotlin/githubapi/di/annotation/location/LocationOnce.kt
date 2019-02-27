@@ -1,4 +1,4 @@
-package com.strikepros.alphaone.di.annotation.location
+package com.kotlin.githubapi.di.annotation.location
 
 import javax.inject.Qualifier
 

@@ -1,4 +1,4 @@
-package com.strikepros.alphaone.di.annotation.httpclient
+package com.kotlin.githubapi.di.annotation.httpclient
 
 import javax.inject.Qualifier
 

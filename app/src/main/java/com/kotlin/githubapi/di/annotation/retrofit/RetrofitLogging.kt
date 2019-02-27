@@ -1,4 +1,4 @@
-package com.strikepros.alphaone.di.annotation.retrofit
+package com.kotlin.githubapi.di.annotation.retrofit
 
 import javax.inject.Qualifier
 
