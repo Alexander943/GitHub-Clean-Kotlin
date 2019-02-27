@@ -1,5 +1,6 @@
 package com.kotlin.githubapi.di.module
 
+import com.grapesnberries.curllogger.CurlLoggerInterceptor
 import com.kotlin.githubapi.BuildConfig
 import com.kotlin.githubapi.di.annotation.httpclient.ClientDefault
 import com.kotlin.githubapi.di.annotation.httpclient.ClientLogging

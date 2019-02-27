@@ -30,7 +30,6 @@ import javax.inject.Singleton
     NetworkClientModule::class,
     NetworkApiModule::class,
     RetrofitModule::class,
-    RealmModule::class,
     DataSourceModule::class
 ])
 interface AppComponent : AndroidInjector<App> {
