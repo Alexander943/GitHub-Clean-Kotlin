@@ -12,7 +12,6 @@ android {
         targetSdkVersion rootProject.targetSdkVersion
         versionCode rootProject.versionCode
         versionName rootProject.versionName
-        multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -23,7 +22,6 @@ android {
     }
 
     applicationVariants.all { variant ->
-        def flavor = variant.productFlavors[0]
         variant.buildConfigField "String", "SERVER_URL", "\"https://api.github.com/\""
     }
 }
