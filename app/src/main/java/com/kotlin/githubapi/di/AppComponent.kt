@@ -32,7 +32,7 @@ import javax.inject.Singleton
     RetrofitModule::class,
     DataSourceModule::class
 ])
-interface AppComponent : AndroidInjector<App> {
+public interface AppComponent : AndroidInjector<App> {
 
     @Component.Builder
     interface Builder {
