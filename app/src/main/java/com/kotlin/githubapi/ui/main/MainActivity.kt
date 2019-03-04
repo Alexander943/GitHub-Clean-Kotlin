@@ -5,5 +5,5 @@ import com.kotlin.githubapi.ui.base.BaseActivity
 
 class MainActivity : BaseActivity() {
 
-    override fun getLayoutResource(): Int = R.layout.activity_main
+    override fun getLayoutResource(): Int = R.layout.main_activity
 }
