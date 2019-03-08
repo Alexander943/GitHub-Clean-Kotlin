@@ -2,6 +2,7 @@ package com.kotlin.githubapi.di.module
 
 import com.kotlin.githubapi.ui.main.MainActivity
 import com.kotlin.githubapi.ui.splash.SplashActivity
+import com.kotlin.githubapi.ui.usersearch.UserSearchActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -13,4 +14,7 @@ abstract class ActivityModule {
 
     @ContributesAndroidInjector
     internal abstract fun mainActivity(): MainActivity
+
+    @ContributesAndroidInjector
+    internal abstract fun userSearchActivity(): UserSearchActivity
 }

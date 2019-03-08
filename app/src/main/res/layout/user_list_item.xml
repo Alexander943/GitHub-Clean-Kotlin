@@ -15,18 +15,18 @@
         android:orientation="horizontal">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/image_avatar"
+            android:id="@+id/uli_image_avatar"
             android:layout_width="50dp"
             android:layout_height="50dp" />
 
         <TextView
-            android:id="@+id/text_username"
+            android:id="@+id/uli_text_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/image_avatar"
+            app:layout_constraintStart_toEndOf="@+id/uli_image_avatar"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Джонатан Л." />
 
