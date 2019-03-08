@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">GithubKotlin</string>
+    <string name="user_search">User search</string>
+    <string name="coming_soon">Coming soon</string>
 </resources>
