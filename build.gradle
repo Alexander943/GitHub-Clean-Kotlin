@@ -23,6 +23,7 @@ buildscript {
         okhttpVersion = '3.10.0'
         daggerVersion = '2.19'
         roomVersion = '1.1.1'
+        glideVersion = '4.8.0'
     }
     repositories {
         google()
