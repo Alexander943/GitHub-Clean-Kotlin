@@ -1,9 +1,9 @@
 package com.kotlin.githubapi.data.user
 
-import com.kotlin.githubapi.data.user.model.Users
+import com.kotlin.githubapi.data.user.response.Users
 import io.reactivex.Observable
 
 interface UserDataSource {
 
-    fun getUsers(query: String): Observable<Users>
+    fun getUsers(page: Int?, perPage: Int?, query: String): Observable<Users>
 }

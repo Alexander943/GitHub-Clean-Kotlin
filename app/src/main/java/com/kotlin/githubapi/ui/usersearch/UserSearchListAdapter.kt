@@ -3,7 +3,7 @@ package com.kotlin.githubapi.ui.usersearch
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
 import com.kotlin.githubapi.R
-import com.kotlin.githubapi.data.user.model.User
+import com.kotlin.githubapi.data.user.response.User
 import com.kotlin.githubapi.ui.base.BaseListAdapter
 import com.kotlin.githubapi.ui.base.BaseViewHolder
 import kotlinx.android.synthetic.main.user_list_item.view.*

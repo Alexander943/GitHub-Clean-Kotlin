@@ -7,13 +7,20 @@
     android:padding="16dp"
     tools:context=".ui.main.MainActivity">
 
-    <androidx.appcompat.widget.SearchView
-        android:id="@+id/usa_search_view"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/usa_card_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/usa_search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </androidx.cardview.widget.CardView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/usa_recycler_view"
@@ -24,6 +31,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usa_search_view" />
+        app:layout_constraintTop_toBottomOf="@+id/usa_card_view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
