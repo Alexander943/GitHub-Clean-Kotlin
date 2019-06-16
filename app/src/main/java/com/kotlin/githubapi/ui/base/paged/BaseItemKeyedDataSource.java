@@ -1,13 +1,10 @@
 package com.kotlin.githubapi.ui.base.paged;
 
-import java.util.concurrent.TimeUnit;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.lifecycle.MutableLiveData;
 import androidx.paging.ItemKeyedDataSource;
 import io.reactivex.Completable;
-import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.functions.Action;
@@ -24,8 +21,6 @@ public abstract class BaseItemKeyedDataSource<Key, Value> extends ItemKeyedDataS
     private Completable retryCompletable;
     private Completable startCompletable;
     private Completable loadAfterCompletable;
-
-    protected abstract Integer getNextPage();
 
     public void retry(CompositeDisposable compositeDisposable) {
         if (retryCompletable == null) return;
@@ -47,11 +42,6 @@ public abstract class BaseItemKeyedDataSource<Key, Value> extends ItemKeyedDataS
 
                 }, Timber::e)
         );
-    }
-
-    protected <T> Observable<T> zipWithTimer(Observable<T> observable) {
-        return Observable.zip(observable,
-                Observable.timer(500, TimeUnit.MILLISECONDS), (t, timerValue) -> t);
     }
 
     @NonNull
