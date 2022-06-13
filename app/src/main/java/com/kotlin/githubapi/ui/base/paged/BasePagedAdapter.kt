@@ -29,10 +29,13 @@ abstract class BasePagedAdapter<T, VH : RecyclerView.ViewHolder> : PagedListAdap
                     isLoading = true
                     notifyItemInserted(itemCount)
                 }
-                PageLoadStatus.SUCCESS, PageLoadStatus.EMPTY, PageLoadStatus.FAILED -> {
+                PageLoadStatus.SUCCESS,
+                PageLoadStatus.EMPTY,
+                PageLoadStatus.FAILED -> {
                     isLoading = false
                     notifyItemRemoved(itemCount)
                 }
+                else -> error("Please specify all the cases.")
             }
         }
     }
