@@ -5,7 +5,7 @@ import androidx.recyclerview.widget.AsyncDifferConfig
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 
-abstract class BasePagedAdapter<T, VH : RecyclerView.ViewHolder> : PagedListAdapter<T, VH> {
+abstract class BasePagedAdapter<T : Any, VH : RecyclerView.ViewHolder> : PagedListAdapter<T, VH> {
 
     protected var pageState: PageState? = null
     private var isLoading: Boolean = false

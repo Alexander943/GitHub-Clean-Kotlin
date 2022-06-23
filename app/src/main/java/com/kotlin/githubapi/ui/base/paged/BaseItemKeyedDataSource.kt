@@ -9,7 +9,7 @@ import io.reactivex.functions.Action
 import io.reactivex.schedulers.Schedulers
 import timber.log.Timber
 
-abstract class BaseItemKeyedDataSource<Key, Value> : ItemKeyedDataSource<Key, Value>() {
+abstract class BaseItemKeyedDataSource<Key : Any, Value : Any> : ItemKeyedDataSource<Key, Value>() {
 
     protected var isCanLoadMore: Boolean = true
 

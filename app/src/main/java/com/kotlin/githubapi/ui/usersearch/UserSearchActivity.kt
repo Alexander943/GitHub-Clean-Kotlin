@@ -4,10 +4,10 @@ import android.os.Bundle
 import androidx.appcompat.widget.SearchView
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.RecyclerView
 import com.kotlin.githubapi.R
 import com.kotlin.githubapi.ui.base.AppViewModelFactory
 import com.kotlin.githubapi.ui.base.BaseActivity
-import kotlinx.android.synthetic.main.user_search_activity.*
 import javax.inject.Inject
 
 class UserSearchActivity : BaseActivity() {
@@ -27,9 +27,9 @@ class UserSearchActivity : BaseActivity() {
         viewModel = ViewModelProviders.of(this, viewModelFactory).get(UserSearchViewModel::class.java)
         viewModel.users.observe(this, Observer { adapter.updateItems(it) })
 
-        usa_search_view.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+        findViewById<SearchView>(R.id.usa_search_view).setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
-                viewModel.loadUsers(usa_search_view.query.toString())
+                viewModel.loadUsers(findViewById<SearchView>(R.id.usa_search_view).query.toString())
                 return true
             }
 
@@ -38,6 +38,6 @@ class UserSearchActivity : BaseActivity() {
             }
         })
 
-        usa_recycler_view.adapter = adapter
+        findViewById<RecyclerView>(R.id.usa_recycler_view).adapter = adapter
     }
 }
